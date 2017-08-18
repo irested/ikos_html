@@ -57,6 +57,119 @@
 </div>
 </div>
 </header>
+<section id="devis">
+  <div class="container">
+    <h1 class="text-center">Demande de devis</h1>
+    <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur omnis nulla quae velit dignissimos sit.</p>
+    <div id="devis-form">
+      <div class="d-flex flex-row justify-content-center">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="form-area">
+            <form role="form">
+              <div class="form-group">
+                <label for="devisFirstname">Votre nom *</label>
+                <input type="text" class="form-control" id="devisFirstname" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="devisLastname">Votre prénom *</label>
+                <input type="text" class="form-control" id="devisLastname" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="devisMobile">Votre numéro de téléphone *</label>
+                <input type="text" class="form-control" id="devisMobile" name="mobile" required>
+              </div>
+              <div class="form-group">
+                <label for="devisEmail">Votre email *</label>
+                <input type="text" class="form-control" id="devisEmail" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="inlineCheckbox1">Avez vous un terrain ? *</label><br>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1"> oui
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2"> non
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="devisSecteur">Si non, quel est le secteur recherché ?</label>
+                <input type="text" class="form-control" id="devisSecteur" name="secteur" required>
+              </div>
+              <div class="form-group">
+                <label for="devisSurface">Surface habitable souhaitée :</label>
+                <input type="text" class="form-control" id="devisSurface" name="surface" required>
+              </div>
+              <div class="form-group">
+                <label for="1chambre">Nombre de chambres : *</label><br>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="1chambre" value="une"> 1
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="2chambre" value="deux"> 2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="3chambre" value="trois"> 3
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="4chambre" value="quatre"> 4
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="1chambre">Style recherché : *</label><br>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="1chambre" value="une"> plain-pied
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="2chambre" value="deux">Comble aménageables
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="3chambre" value="trois"> Sous-sol
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" id="4chambre" value="quatre">Garage intégré
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="devisSurface">Budget maison : *</label>
+                <input type="number" class="form-control" id="devisSurface" name="surface" required>
+              </div>
+              <div class="form-group">
+                <label for="devisSurface">Budget terrain :</label>
+                <input type="number" class="form-control" id="devisSurface" name="surface" required>
+              </div>
+              <div class="form-group">
+                <label for="devisMessage">Précision supplémentaire :</label>
+                <textarea class="form-control" type="textarea" id="devisMessage" maxlength="140" rows="7"></textarea>
+              </div>
+
+              <button type="button" id="devisSubmit" name="submit" class="btn btn-success pull-right">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <footer class="footer footer-cust">
   <div class="container container-footer">
     <div class="d-flex flex-row flex-wrap">
