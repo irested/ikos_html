@@ -24,6 +24,10 @@ body {
   border-radius: 0;
 }
 
+.nav-primary .navbar-toggler {
+  padding: .45rem 0rem !important;
+}
+
 .nav-primary .navbar-light .navbar-toggler {
   border: none;
 }
@@ -115,10 +119,6 @@ body {
   margin-bottom: 2rem;
 }
 
-
-/*END GENERAL*/
-
-
 /* JUMBOTRON */
 
 #jumb-home-custom {
@@ -127,7 +127,7 @@ body {
   margin-top: 56px;
   margin-bottom: 0;
   min-height: 55vh;
-  background-image: url(/img/jumb_home.jpeg);
+  background-image: url(../img/jumb_home.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ body {
   margin-top: 56px;
   margin-bottom: 0;
   min-height: 55vh;
-  background-image: url(/img/jumb_bg.jpeg);
+  background-image: url(../img/jumb_bg.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,6 +166,8 @@ body {
   background: #08B268;
 }
 
+/*END GENERAL*/
+
 #main-video {
   position: absolute;
   top: 50%;
@@ -180,10 +182,12 @@ body {
 }
 
 
+/* +++ HOMEPAGE +++ */
+
 /* FEATURED */
 
 #featured {
-  padding: 2rem 0 2rem 0;
+  padding: 3.5rem 0;
   background-color: whitesmoke;
 }
 
@@ -194,6 +198,7 @@ body {
 }
 
 #featured p {
+  font-size: 15px;
   text-align: center;
 }
 
@@ -203,7 +208,7 @@ body {
 .present-content1,
 .present-content2,
 .present-content3 {
-  padding: 3rem 0 3rem 0;
+  padding: 5rem 0 5rem 0;
   opacity: 0;
 }
 
@@ -299,18 +304,35 @@ body {
   background-color: transparent;
   color: #666;
 }
+/* +++ END +++ */
 
-/* SOLUTION PAGE */
+/* +++ SOLUTION PAGE +++ */
 
-#procede {
-  padding: 3rem 0;
+#oursolution h2 {
+  margin-bottom: 3rem;
+  font-weight: 600;
 }
 
-#procede h2 {
-  margin-bottom: 5rem;
+#oursolution ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2;
 }
 
-/* ARTICLE PAGE */
+#solution-eco {
+  padding: 5rem 0 2.5rem 0;
+}
+
+#eco-detail, #fast-detail {
+  padding-top: 2rem;
+}
+
+#solution-fast {
+  padding: 2.5rem 0 5rem 0;
+}
+/* +++ END +++*/
+
+/* +++ ARTICLE PAGE +++ */
 
 .article {
   margin-top: 61px;
@@ -343,9 +365,9 @@ body {
   background-color: #08b268;
   color: white;
 }
+/* +++ END +++ */
 
-
-/* ABOUT US PAGE */
+/* +++ ABOUT US PAGE +++ */
 
 #our-mission {
   margin-top: 90px;
@@ -409,9 +431,9 @@ body {
 .leader h3 {
   font-size: 20px;
 }
+/* +++ END +++ */
 
-
-/* CONTACT PAGE */
+/* +++ CONTACT PAGE +++ */
 
 .contact {
   margin-top: 61px;
@@ -458,8 +480,9 @@ body {
 .maps iframe {
   width: 100%;
 }
+/* +++ END +++ */
 
-/* DEVIS PAGE */
+/* +++ DEVIS PAGE +++ */
 
 #devis {
   margin-top: 61px;
@@ -474,7 +497,7 @@ body {
   font-weight: 600;
   font-size: 32px;
 }
-
+/* +++ END +++ */
 
 /* MEDIA */
 
@@ -499,12 +522,21 @@ body {
   .maps {
     margin-bottom: 2rem;
   }
+
+  #oursolution ul {
+    margin-top: 1rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 991px) {
 
   #navbarSupportedContent {
     text-align: center;
+  }
+
+  .cta-nav {
+    margin-left: -15px;
   }
 
   #presentation ul {
@@ -519,21 +551,28 @@ body {
     text-align: center;
     margin-bottom: 2rem;
   }
-
+/* == to discuss ==
   .list-icon-1:before,
   .list-icon-2:before,
   .list-icon-3:before,
-  .list-icon-4:before { /*list-icon-2 3 4 ect*/
+  .list-icon-4:before {
     display: block;
     height: 40px;
     content: "\f015";
     font-size: 1.75rem;
     font-family: FontAwesome;
   }
-
+*/
   .present-text h2 {
     margin-top: 1rem !important;
   }
+
+  #eco-detail, #fast-detail {
+    text-align: justify;
+  }
+}
+#eco-detail, #fast-detail {
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -543,7 +582,8 @@ body {
 }
 
 @media (min-width: 992px) {
-  .list-icon{
+
+/*.list-icon { == to discuss ==
   position: relative;
 }
 
@@ -558,6 +598,6 @@ body {
   content: "\f015";
   font-size: 1.75rem;
   font-family: FontAwesome;
-}
+}*/
 
 }
